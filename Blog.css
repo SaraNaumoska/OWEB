@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+   background-color: rgb(184, 218, 184);;
+  }
+  html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .navbar {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #333;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #logo{
+    height:30px;
+  }
+  .image {
+    float: left;
+    padding: 0 !important;
+  }
+    .header {
+        padding-top: 5px;
+        padding-bottom: 1px;
+        font-size: 35px;
+        text-align: center;
+        background: whitesmoke;
+        border-bottom: groove 3px rgb(71, 121, 90);
+      }
+      .leftcolumn {
+        float: left;
+        width: 50%;
+        padding-left: 25px;
+      }
+      .rightcolumn {
+        float: left;
+        width: 45%;
+        padding-left: 25px;
+      }
+      .image1 {
+        background-color:inherit;
+        width: 95%;
+        padding: 20px;
+      }
+      .card {
+        background-color: whitesmoke;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border-top-style: groove;
+        border-left-style: groove;
+        border-width: 3px;
+        border-color: black;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+      .row {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin:8px;
+      }
+      #prva{
+        border-color: #aaa;
+        border-width: 25px;
+        border-style:solid;
+        border-radius: 5px;
+
+      }
+      #vtora{
+        height: 450px;
+        border-color: #aaa;
+        border-width: 25px;
+        border-style:solid;
+        border-radius: 5px;
+
+      }
+      #treta{
+        height: 70px;
+        margin-left: 20px;
+      }
+      #cet{
+        border-color: #aaa;
+        border-width: 25px;
+        border-style:solid;
+        border-radius: 5px;
+        height: 245px;
+      }
+      #ime {
+        letter-spacing: 5px;
+      }
+      #myFile {
+        margin: 25px;
+        margin-left: 100px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .imag {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #aaa;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+      }
+      
+      .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      h5{
+        color: rgb(163, 163, 163);
+        font-weight: lighter;
+      }
