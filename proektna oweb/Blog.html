@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog</title>
+        <link rel="stylesheet" href="C:\Users\Robert\Desktop\proektna oweb\Blog.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="C:\Users\Robert\Desktop\proektna oweb\s.png">
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <div class="navbar">
+        <div class="image"><a href="C:\Users\Robert\Desktop\proektna oweb\PROEKTNA_oweb.html"><img id="logo" src="C:\Users\Robert\Desktop\proektna oweb\s.png"></a></div>
+        <a href="C:\Users\Robert\Desktop\proektna oweb\Contact.html">Contact Form</a> 
+        <a href="C:\Users\Robert\Desktop\proektna oweb\Survey.html">Survey</a>
+        <a href="C:\Users\Robert\Desktop\proektna oweb\Blog.html">Blog</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Favorites
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="C:\Users\Robert\Desktop\proektna oweb\Music.html">Music</a>
+              <a href="C:\Users\Robert\Desktop\proektna oweb\Movies.html">Movies</a>
+              <a href="C:\Users\Robert\Desktop\proektna oweb\Food.html">Food</a>
+            </div>
+        </div>
+        <a href="C:\Users\Robert\Desktop\proektna oweb\Gallery.html">Gallery</a>
+        <a href="C:\Users\Robert\Desktop\proektna oweb\AboutMe.html">About Me</a>
+</div>
+<div class="header">
+    <h2 id="heading">MY BLOG</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Nature</h2>
+        <h5>Oct 26, 2021</h5>
+        <div class="container">
+          <img src="leaves.jpeg" class="imag" alt="image">
+          <div class="overlay">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corporis cupiditate officia natus aliquam voluptas quas vel fugiat deserunt temporibus alias adipisci non rem velit, necessitatibus modi nobis fugit obcaecati.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Nature</h2>
+        <h5>Dec 15, 2021</h5>
+        <div class="container">
+          <img src="apple.jpg" class="imag" alt="image">
+          <div class="overlay">
+            <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos veritatis aliquid omnis laboriosam quae.</div>
+          </div>
+        </div>
+      </div>
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+   </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2 id="about">About Me</h2>
+        <b>Click on the logo:</b>
+        <p><a href="C:\Users\Robert\Desktop\proektna oweb\AboutMe.html"><img id="treta" src="C:\Users\Robert\Desktop\proektna oweb\s.png" alt="logo"></a></p>
+      </div>
+      
+      <div class="card">
+        <h3>Follow Me</h3>
+      <p>If you like my content, you can follow me <strong><a href="C:\Users\Robert\Desktop\proektna oweb\Contact.html">here</a>.</strong></p>
+      </div>
+
+      <div class="card">
+        <form id="myForm" method="post">
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." required>
+      
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="The title of the article.." required>
+      
+          <label for="city">City</label>
+          <select id="city" name="city">
+            <option value="skopje">Skopje</option>
+            <option value="kumanovo">Kumanovo</option>
+            <option value="prilep">Prilep</option>
+            <option value="veles">Veles</option>
+            <option value="bitola">Bitola</option>
+            <option value="other">Other...</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      
+          <button id="submit" type="submit">Submit</button>
+      
+        </form>
+      </div>
+    </div>
+    <!-- <form action="/action_page.php" method="post">
+      <input type="file" id="myFile" name="filename">
+      <input type="submit" id="sub">
+    </form> -->
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+  </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js">
+
+</script>
+  <script type="text/javascript">
+    var tekst = document.getElementsByName('textarea');
+    var kopce = document.getElementsByClassName('sub');
+  
+    function showTime(){
+      var date = new Date();
+      var h = date.getHours();
+      var m = date.getMinutes(); 
+      var s = date.getSeconds(); 
+      var session = "AM";
+      
+      if(h == 0){
+          h = 12;
+      }
+      
+      if(h > 12){
+          h = h - 12;
+          session = "PM";
+      }
+      
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+      
+      var time = h + ":" + m + ":" + s + " " + session;
+      document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+      
+      setTimeout(showTime, 1000);
+  }
+  showTime();
+
+  var mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+  }
+ $("#myForm").submit(function(e){
+      e.preventDefault(); 
+      e.stopPropagation();
+      var karticka = document.createElement("div");
+      var name = $("#name").val();
+      var title = $("#title").val();
+      var city = $("select#city option:checked").val();
+      var subject = $("#subject").val();
+      $(karticka).html(name + `<br><hr><br>` + title + `<br><hr><br>` + city + `<br><hr><br>` + subject);
+      $(karticka).css({
+        "background-color": "whitesmoke",
+        "padding": "20px",
+        "margin-top": "20px",
+        "border-radius": "20px",
+        "border-top-style": "groove",
+        "border-left-style": "groove",
+        "border-width": "3px",
+        "border-color": "black",
+      });
+      $(".rightcolumn").append(karticka); 
+
+    });
+
+    
+  </script>
+
+</html>

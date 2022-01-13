@@ -1,0 +1,120 @@
+body {
+  background: rgb(144, 196, 144);
+    align-content: center;
+    position: relative;
+    margin: 0;
+}
+.navbar {
+  background-color: black;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: right;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; 
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+img{
+  height: 30px;
+}
+.image {
+  float: left;
+  padding: 0 !important;
+}
+p {
+    background-image:url('leaves.jpeg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size:auto;
+    color: rgb(184, 218, 184);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:normal;
+    font-size: 30px;
+    max-width: 450px;
+    position:absolute;
+    padding: 75px;
+    margin-left: 510px;
+    margin-top: 60px;
+    border-radius: 100%;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    text-align: center;
+
+}
+.con a:link, .con a:visited {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  
+  .con a:hover, .con a:active {
+    background-color: white;
+    color: black;
+  }
+  b {
+    background-color: black;
+    color: white;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  b:hover {
+    background-color: white;
+    color: black;
+  }
